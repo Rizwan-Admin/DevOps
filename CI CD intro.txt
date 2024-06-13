@@ -1,0 +1,131 @@
+#Introduction to CICD Tools & its Usage
+
+https://youtu.be/SWtJ4PKjISE
+========================================
+
+Microservices
+=============
+
+monolithic --> EC2 / Instances
+
+entire code -- SDLC --Develop--> Deploy
+===============
+
+Code --> Build + compile -- then --> Deploy 
+
+SDLC= Code --> build--> Compile--> deploy (on server or cluster)
+
+#before microservices archeture --> monolithic architecture
+
+#monolithi architecture= entire code --> build + compile --> on VMs
+
+Develop
+Staging
+production
+
+===========
+Artifact:
+
+Entire code build in monolitics Architecure
+
+Deployment more time required,
+monolithic : Downtime available
+===================
+
+Microservices:
+no entire code build
+basically code brake
+
+sepratily each microservices deploy. 
+its independent deploy.
+losely coupled.
+
+ highly available
+ zero downtime
+
+
+*hotstar architecure , microservices use case, auto scale.
+=========
+#Issues in Microservices
+1.Monitoring 
+2.Compability
+
+*copability:
+dockerised container.
+================
+*Dependency and compability issues solve by docker.
+======after 1 hours video===
+*Monitoring issues:
+
+Docker host --deploy --> microservices --> monitoring is issues
+
+Kubernatics Develped by Google:
+
+Kybernetics: Constraction & Orchistration.-->Orchistration means Management of containers.
+
+
+===========================
+Containers
+-->
+images
+-->
+Microservices
+Build-->
+code
+=============================
+monitoring issue solve by kubernetics.
+=====================================
+*#kubernatic
+highly available
+up & runing
+===================
+#CICD
+
+*Monolitic
+(code--> build + compile --> Deploy)
+
+*Microservices 
+(code--> {[build + compile]Artifact-->Docker image-->deploy on Docker Host} -->)
+------------Monitoring issue in this above----------------
+
+*(code--> {[build + compile]Artifact-->Docker image-->deploy on kubernatic--> properly Orchistration
+
+
+NOTE:
+*Docker sworm that is alternative of kubernatics
+*diff docker sworm and kubernatic? --------- searrch on google.
+================================================
+Microservices Architecure
+CICD pipline--> Code (git hub) -->
+-->build + compile--[artifact]=(jenkin {integration tool}, based on languge, ex java-->mavan, .net-> ms build, react->npm, artifactory storage ex. j frog, nexes
+-->docker file -->Dockers image
+
+
+===
+#jenkin
+1st step => code clone via git hub
+2nd step => build + compile
+3rd step => artifact -->docker file --> build --> docker image
+4th step => push to Registory -> docker hub / aws ECR
+5th step => Deploy to kubernatics
+
+------Run As Microservices--------
+==========
+Terraform:
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
