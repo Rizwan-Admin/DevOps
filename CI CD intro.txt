@@ -1,6 +1,4 @@
 #Introduction to CICD Tools & its Usage
-
-https://youtu.be/SWtJ4PKjISE
 ========================================
 
 Microservices
